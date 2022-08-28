@@ -11,8 +11,8 @@
 $string = "Patrice ";
 $int = 9;
 $float = 3.14;
-echo "My favorite number is $int \n";
-echo ("I am enclosed in parenthesis");
+// echo "My favorite number is $int \n";
+// echo ("I am enclosed in parenthesis");
 
 ?>
 
@@ -38,7 +38,22 @@ $b = 7007.70;
 //string 
 $str1 = "Hello";
 $str2 = "what is your favorite color?";
+// echo ($str1);
+
+//null 
+$a;
+
+?>
 
 
-echo $str1;
+<?php
+// constants 
+// two methods: 1. define() method 2. const method
+
+// using the define() method 
+define('first_name', "Olivia", false);
+// echo first_name;
+
+const last_name = 'Rodrigo';
+// echo last_name;
 ?>
