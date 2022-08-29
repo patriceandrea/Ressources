@@ -86,6 +86,37 @@
 <?php
 //multidimensional array 
 
+$cars = array(
+  array(
+    "name" => "Urus",
+    "type" => "SUV",
+    "brand" => "Lamborghini"
+  ),
+  array(
+    "name" => "Cayenne",
+    "type" => "SUV",
+    "brand" => "Porsche"
+  ),
+  array(
+    "name" => "Bentayga",
+    "type" => "SUV",
+    "brand" => "Bentley"
+  )
+);
 
+
+//access to multidimensional array 
+
+echo "Urus is an " . $cars[0]["type"] . " manufactured by " . $cars[0]["brand"] . "\n";
+echo "Bentayga is an " . $cars[2]["type"] . " manufacured by " . $cars[2]["brand"] . "\n";
+
+//for loop and foreach 
+$size = count($cars);
+for ($i = 0; $i < $size; $i++) {
+  foreach ($cars[$i] as $key => $value) {
+    echo $key . ":" . $value . "\n";
+  }
+  echo "\n";
+}
 
 ?>
