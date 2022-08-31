@@ -4,9 +4,9 @@
 class Person
 {
   //store first name of person 
-  var $fname;
+  private $fname;
   //store last name of person 
-  var $lname;
+  private $lname;
 
   //gets name 
   function get_name()
@@ -14,10 +14,22 @@ class Person
     return $this->name;
   }
 
-  //sets name 
-  function set_name($new_name)
+  //sets lname 
+  public function setLName($new_name)
   {
     $this->name = $new_name;
+  }
+
+
+  //sets fname 
+  public function setFName($new_name)
+  {
+    $this->name = $new_name;
+  }
+
+  function showName()
+  {
+    echo "My name is: " . $this->fname . " " . $this->lname . "\n";
   }
 }
 
@@ -27,6 +39,10 @@ $john = new Person();
 //assign values to variables
 $john->fname = "John";
 $john->lname = "Wick";
+
+//call Person class method 
+$john->showName();
+
 
 class Human
 {
